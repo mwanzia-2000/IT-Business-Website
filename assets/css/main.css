@@ -11,7 +11,10 @@
   /* Default color used for the majority of the text content across the entire website */
   --heading-color: #545454;
   /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #e96b56;
+  --topbar-background: #003366;
+ /*color for topbar*/
+
+  --accent-color:#003366; ;
   /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff;
   /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
@@ -21,9 +24,9 @@
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: #444444;
+  --nav-color: #0c0c0c;
   /* The default color of the main navmenu links */
-  --nav-hover-color: #e96b56;
+  --nav-hover-color: #444444 ;
   /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff;
   /* Used as the background color for mobile navigation menu */
@@ -31,7 +34,7 @@
   /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #444444;
   /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #e96b56;
+  --nav-dropdown-hover-color: #444444;
   /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
@@ -66,6 +69,7 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
+  --contrast-color: #ffffff;
 }
 
 a {
@@ -153,7 +157,7 @@ h6 {
 }
 
 .header .topbar {
-  background-color: var(--background-color);
+  background-color: var(--topbar-background);
   height: 40px;
   padding: 0;
   font-size: 14px;
@@ -162,13 +166,13 @@ h6 {
 
 .header .topbar .contact-info i {
   font-style: normal;
-  color: var(--accent-color);
+  color: var(--contrast-color);
 }
 
 .header .topbar .contact-info i a,
 .header .topbar .contact-info i span {
   padding-left: 5px;
-  color: var(--default-color);
+  color: var(--accent-color);
 }
 
 @media (max-width: 575px) {
@@ -186,7 +190,7 @@ h6 {
 }
 
 .header .topbar .contact-info i a:hover {
-  color: var(--accent-color);
+  color: var(--default-color);
   text-decoration: underline;
 }
 
@@ -198,7 +202,7 @@ h6 {
 }
 
 .header .topbar .social-links a:hover {
-  color: var(--accent-color);
+  color: var(--default-color);
 }
 
 .header .branding {
@@ -465,11 +469,12 @@ h6 {
 # Global Footer
 --------------------------------------------------------------*/
 .footer {
-  color: var(--default-color);
-  background-color: var(--background-color);
+  color: var(--contrast-color);
+  background-color: var(--topbar-background);
   font-size: 14px;
   position: relative;
 }
+
 
 .footer .footer-newsletter {
   background-color: color-mix(in srgb, var(--default-color), transparent 95%);
@@ -493,7 +498,7 @@ h6 {
 }
 
 .footer .footer-newsletter .newsletter-form:focus-within {
-  border-color: var(--accent-color);
+  border-color: var(--surface-color);
 }
 
 .footer .footer-newsletter .newsletter-form input[type=email] {
@@ -542,7 +547,7 @@ h6 {
 }
 
 .footer .social-links a:hover {
-  color: var(--accent-color);
+  color: var(--contrast-color);
   border-color: var(--accent-color);
 }
 
@@ -587,7 +592,7 @@ h6 {
 }
 
 .footer .footer-links ul a:hover {
-  color: var(--accent-color);
+  color: var(--contrast-color);
 }
 
 .footer .footer-about a {
@@ -615,6 +620,18 @@ h6 {
   margin-top: 6px;
   font-size: 13px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*--------------------------------------------------------------
 # Scroll Top Button

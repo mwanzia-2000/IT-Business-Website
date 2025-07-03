@@ -22,7 +22,7 @@ foreach ($products as $product) {
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Products</title>
+  <title>Solutions</title>
   <meta name="description" content="Product listings and details">
   <meta name="keywords" content="products, online store, shopping">
   <link href="favicon.ico" rel="icon">
@@ -50,10 +50,10 @@ foreach ($products as $product) {
         <nav class="breadcrumbs">
           <ol>
             <li><a href="./">Home</a></li>
-            <li class="current">Products</li>
+            <li class="current">Solutions</li>
           </ol>
         </nav>
-        <h1>Products</h1>
+        <h1>Solutions</h1>
       </div>
     </div><!-- End Page Title -->
 

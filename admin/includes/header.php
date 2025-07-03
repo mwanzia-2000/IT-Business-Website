@@ -43,10 +43,10 @@ $menuItems = [
         ],
     ],
     [
-        "menuTitle" => "Products",
+        "menuTitle" => "Solutions",
         "icon" => "fa fa-shopping-bag",
         "pages" => [
-            ["title" => "Product Categories", "url" => "category.php"],
+            ["title" => "Solutions Categories", "url" => "category.php"],
             ["title" => "All Products", "url" => "products.php"],
         ],
     ],
@@ -127,7 +127,7 @@ $message_count = (new Database())->eQuery("SELECT COUNT(*) AS no_checked_count F
 
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <a href="./" class="brand-link">
-        <img src="../assets/img/logo.png" alt="Admin Panel Logo" class="brand-image img-circle elevation-3">
+        <img src="../assets/img/clogo.png" alt="Admin Panel Logo" class="brand-image img-circle elevation-3">
         <span class="brand-text font-weight-light">Admin Panel</span>
     </a>
     <div class="sidebar">

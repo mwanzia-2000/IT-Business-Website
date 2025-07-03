@@ -3,13 +3,13 @@
     <div class="container footer-top">
         <div class="row gy-4">
             <div class="col-lg-4 col-md-6 col-sm-12 footer-about mb-4">
-                <a href="./" class="d-flex align-items-center">
-                    <span class="sitename">Birmann Corporate</span>
-                </a>
+                
+                    <span>Birmann Corporate</span>
+                
                 <div class="footer-contact pt-3">
                     <p><strong>Location:</strong> <?php echo  $contact_boxData[0]['value']; ?></p>
-                    <p class="mt-3"><strong>Phone:</strong> <span onclick="window.location.href='tel:<?php echo trim($contact_boxData[2]['value']); ?>'"><?php echo $contact_boxData[1]['value']; ?></span></p>
-                    <p><strong>Email:</strong> <span onclick="window.location.href='mailto:<?php echo $contact_boxData[2]['value']; ?>'"><?php echo  $contact_boxData[2]['value']; ?></span></p>
+                    <p><strong>Phone:</strong> <?php echo $contact_boxData[1]['value']; ?></p>
+                    <p><strong>Email:</strong> <?php echo $contact_boxData[2]['value']; ?></p>
                 </div>
             </div>
 

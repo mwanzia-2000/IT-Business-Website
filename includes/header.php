@@ -41,7 +41,7 @@
                     <li><a href="./" class="<?= ($current_page == 'index.php') ? 'active' : ''; ?>">Home</a></li>
                     <li><a href="about.php" class="<?= ($current_page == 'about.php') ? 'active' : ''; ?>">About Us</a></li>
                     <li><a href="services.php" class="<?= ($current_page == 'services.php') ? 'active' : ''; ?>">Services</a></li>
-                    <li><a href="products.php" class="<?= ($current_page == 'products.php') ? 'active' : ''; ?>">Products</a></li>
+                    <li><a href="products.php" class="<?= ($current_page == 'products.php') ? 'active' : ''; ?>">Solutions</a></li>
                     <li><a href="contact.php" class="<?= ($current_page == 'contact.php') ? 'active' : ''; ?>">Contact</a></li>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
