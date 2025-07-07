@@ -30,9 +30,15 @@
 
     <div class="branding">
         <div class="container position-relative d-flex align-items-center justify-content-between">
-            <a href="./" class="logo d-flex align-items-center">
-                <h1 class="sitename">Birmann Corporate<br></h1>
-            </a>
+            
+        
+        <a href="./" class="logo d-flex align-items-center">
+    <img src="assets/img/fine.png" alt="Birmann Logo" class="header-logo">
+</a>
+
+
+
+
 
             <?php $current_page = basename($_SERVER['PHP_SELF']); ?>
 

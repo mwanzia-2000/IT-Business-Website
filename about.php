@@ -132,6 +132,29 @@ foreach ($serviceItems as $item) {
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/254748900043"
+   class="whatsapp-float animate-bounce"
+   target="_blank"
+   title="Chat with us on WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+<!-- Phone Floating Button -->
+<a href="tel:+254748900043"
+   class="phone-float animate-ring"
+   title="Call Us">
+  <i class="bi bi-telephone-fill"></i>
+</a>
+
+
+
+
+
+
+
+
+
 
 </body>
 

@@ -69,9 +69,11 @@ $query = new Database();
         <div class="row gy-4 mt-1">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2974.8813426551865!2d67.01298087569626!3d39.58263960598262!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f4d21d3f20f2e7d%3A0x65da282d59cb1b22!2sUy!5e1!3m2!1sen!2s!4v1738728573422!5m2!1sen!2s"
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"></iframe>
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1994.650657449408!2d36.821946!3d-1.286389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d58b6c94b3%3A0x3e17d158b32d882b!2sKenyatta%20International%20Convention%20Centre!5e0!3m2!1sen!2ske!4v1720031234567!5m2!1sen!2ske"
+  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
           </div><!-- End of Google Map -->
 
           <div class="col-lg-6">
@@ -163,6 +165,26 @@ $query = new Database();
       xhr.send(formData);
     });
   </script>
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/254748900043"
+   class="whatsapp-float animate-bounce"
+   target="_blank"
+   title="Chat with us on WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+<!-- Phone Floating Button -->
+<a href="tel:+254748900043"
+   class="phone-float animate-ring"
+   title="Call Us">
+  <i class="bi bi-telephone-fill"></i>
+</a>
+
+
+
+
+
+
 
 </body>
 

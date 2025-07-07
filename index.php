@@ -57,7 +57,9 @@ foreach ($serviceItems as $item) {
     <!-- Hero Section -->
     <section id="hero" class="hero section">
 
-      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+     
+         <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
 
         <?php foreach ($banners as $banner): ?>
           <div class="carousel-item <?php echo ($banner === reset($banners)) ? 'active' : ''; ?>">
@@ -70,6 +72,7 @@ foreach ($serviceItems as $item) {
           </div><!-- End of Carousel Item -->
 
         <?php endforeach; ?>
+        
 
         <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
           <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
@@ -78,6 +81,7 @@ foreach ($serviceItems as $item) {
         <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
           <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
         </a>
+        
 
       </div>
 
@@ -171,6 +175,24 @@ foreach ($serviceItems as $item) {
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/254748900043"
+   class="whatsapp-float animate-bounce"
+   target="_blank"
+   title="Chat with us on WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+<!-- Phone Floating Button -->
+<a href="tel:+254748900043"
+   class="phone-float animate-ring"
+   title="Call Us">
+  <i class="bi bi-telephone-fill"></i>
+</a>
+
+
 
 </body>
 

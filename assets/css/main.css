@@ -9,12 +9,12 @@
   /* Background color for the entire website, including individual sections */
   --default-color: #444444;
   /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #545454;
+  --heading-color: #FF902A;
   /* Color for headings, subheadings and title throughout the website */
   --topbar-background: #003366;
  /*color for topbar*/
 
-  --accent-color:#003366; ;
+  --accent-color:#003366;
   /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff;
   /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
@@ -214,8 +214,8 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
-  margin-right: 8px;
+  max-height: 150px;
+  margin-right: 60px;
 }
 
 .header .logo h1 {
@@ -252,9 +252,9 @@ h6 {
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-color);
+    color: var(--heading-color);
     padding: 18px 15px;
-    font-size: 14px;
+    font-size: 18px;
     font-family: var(--nav-font);
     font-weight: 400;
     display: flex;
@@ -279,7 +279,7 @@ h6 {
   .navmenu li:hover>a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-hover-color);
+    color: var(--heading-color);
   }
 
   .navmenu .dropdown ul {
@@ -419,6 +419,16 @@ h6 {
     transform: rotate(180deg);
   }
 
+
+
+
+
+
+
+
+
+
+
   .navmenu .dropdown ul {
     position: static;
     display: none;
@@ -435,7 +445,7 @@ h6 {
 
   .navmenu .dropdown>.dropdown-active {
     display: block;
-    background-color: rgba(33, 37, 41, 0.03);
+    background-color: rgba(248, 15, 85, 0.03);
   }
 
   .mobile-nav-active {
@@ -772,6 +782,14 @@ section,
 .hero {
   padding: 0;
 }
+.carousel-container p {
+  color: #FFFFFF;
+}
+
+
+
+
+
 
 .hero .carousel {
   width: 100%;
@@ -798,6 +816,7 @@ section,
   height: 100%;
   object-fit: cover;
   z-index: 1;
+ 
 }
 
 .hero .carousel-item {
@@ -818,10 +837,7 @@ section,
 }
 
 .hero .carousel-item::before {
-  content: "";
-  background-color: color-mix(in srgb, var(--background-color), transparent 20%);
-  position: absolute;
-  inset: 0;
+  background-color: rgba(0, 0, 0, 0.1); /* Light overlay */
 }
 
 .hero .carousel-container {
@@ -842,7 +858,7 @@ section,
 }
 
 .hero .carousel-item h2 span {
-  color: var(--accent-color);
+  color: var(--background-color);
 }
 
 @media (max-width: 768px) {
@@ -2493,4 +2509,79 @@ section,
   padding-left: 5px;
   color: color-mix(in srgb, var(--default-color), transparent 60%);
   font-size: 14px;
+}
+/* WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 120px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 24px;
+  z-index: 1000;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Phone Button */
+.phone-float {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 24px;
+  z-index: 999;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/*trial*/
+
+
+@keyframes liquidZoomBurst {
+  0% {
+    transform: scale(0.8);
+    border-radius: 70% 30% 60% 40%/60% 50% 50% 40%;
+    clip-path: polygon(0 20%, 100% 0%, 100% 30%, 0 50%);
+    /* Removed blur and saturate filters */
+  }
+  30% {
+    transform: scale(1.1);
+    border-radius: 40% 60% 40% 60%/50% 50% 50% 50%;
+    clip-path: polygon(0 0%, 100% 10%, 100% 90%, 0 100%);
+  }
+  60% {
+    transform: scale(1.05);
+    border-radius: 30% 70% 30% 70%/40% 60% 40% 60%;
+    clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0 100%);
+  }
+  100% {
+    transform: scale(1);
+    border-radius: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+.carousel-item {
+  overflow: hidden;
+  transform: translateZ(0);
+}
+
+.carousel-item.active img {
+  animation: liquidZoomBurst 7s cubic-bezier(0.4, 0, 0.2, 1.5) forwards;
+  will-change: transform, clip-path;
+  transform-origin: center center;
+  /* Removed mix-blend-mode to preserve original colors */
+  box-shadow: 0 0 20px rgba(255,255,255,0.2); /* Softer shadow */
+  filter: none !important; /* Force clear image */
+}
+
+/* Optional clear background */
+.carousel-inner {
+  background: transparent;
 }
