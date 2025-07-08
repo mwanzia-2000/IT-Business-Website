@@ -139,7 +139,7 @@ if ($product) {
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
-  <!-- WhatsApp Floating Button -->
+ <!-- WhatsApp Floating Button -->
 <a href="https://wa.me/254748900043"
    class="whatsapp-float animate-bounce"
    target="_blank"
@@ -152,6 +152,13 @@ if ($product) {
    class="phone-float animate-ring"
    title="Call Us">
   <i class="bi bi-telephone-fill"></i>
+</a>
+
+<!-- Email Floating Button -->
+<a href="mailto:info@birmannict.com"
+   class="email-float animate-pulse"
+   title="Email Us">
+  <i class="bi bi-envelope-fill"></i>
 </a>
 
 </body>

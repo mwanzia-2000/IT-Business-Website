@@ -61,7 +61,60 @@ $ourservices = $query->select('ourServices');
         <div class="row">
 
           <div class="col-lg-6 d-flex align-items-center">
-            <img src="assets/img/<?php echo $bioservices[0]['image'] ?>" class="img-fluid" alt="Our Products">
+           
+
+<style>
+  @keyframes liquidZoomBurst {
+    0% {
+      transform: scale(0.8);
+      border-radius: 70% 30% 60% 40%/60% 50% 50% 40%;
+      clip-path: polygon(0 20%, 100% 0%, 100% 30%, 0 50%);
+    }
+    30% {
+      transform: scale(1.1);
+      border-radius: 40% 60% 40% 60%/50% 50% 50% 50%;
+      clip-path: polygon(0 0%, 100% 10%, 100% 90%, 0 100%);
+    }
+    60% {
+      transform: scale(1.05);
+      border-radius: 30% 70% 30% 70%/40% 60% 40% 60%;
+      clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0 100%);
+    }
+    100% {
+      transform: scale(1);
+      border-radius: 0;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+</style>
+
+<img src="assets/img/<?php echo $bioservices[0]['image'] ?>" 
+     class="img-fluid" 
+     alt="Our Products"
+     style="
+       animation: liquidZoomBurst 7s cubic-bezier(0.4, 0, 0.2, 1.5) infinite;
+       transform-origin: center center;
+       will-change: transform, clip-path;
+       filter: none;
+       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+     ">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
           </div>
 
           <div class="col-lg-6 pt-4 pt-lg-0 content">
@@ -133,8 +186,7 @@ $ourservices = $query->select('ourServices');
   <script src="assets/js/main.js"></script>
 
 
-
-  <!-- WhatsApp Floating Button -->
+<!-- WhatsApp Floating Button -->
 <a href="https://wa.me/254748900043"
    class="whatsapp-float animate-bounce"
    target="_blank"
@@ -147,6 +199,13 @@ $ourservices = $query->select('ourServices');
    class="phone-float animate-ring"
    title="Call Us">
   <i class="bi bi-telephone-fill"></i>
+</a>
+
+<!-- Email Floating Button -->
+<a href="mailto:info@birmannict.com"
+   class="email-float animate-pulse"
+   title="Email Us">
+  <i class="bi bi-envelope-fill"></i>
 </a>
 
 

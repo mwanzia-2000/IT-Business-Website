@@ -115,7 +115,74 @@ foreach ($serviceItems as $item) {
           <?php foreach ($aboutItems as $about): ?>
             <div class="col-lg-6 order-1 order-lg-2">
               <?php if (!empty($about['image'])): ?>
-                <img src="<?= htmlspecialchars($about['image']) ?>" class="img-fluid" alt="About Us">
+                
+<style>
+  @keyframes liquidZoomBurst {
+    0% {
+      transform: scale(0.8);
+      border-radius: 70% 30% 60% 40%/60% 50% 50% 40%;
+      clip-path: polygon(0 20%, 100% 0%, 100% 30%, 0 50%);
+    }
+    30% {
+      transform: scale(1.1);
+      border-radius: 40% 60% 40% 60%/50% 50% 50% 50%;
+      clip-path: polygon(0 0%, 100% 10%, 100% 90%, 0 100%);
+    }
+    60% {
+      transform: scale(1.05);
+      border-radius: 30% 70% 30% 70%/40% 60% 40% 60%;
+      clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0 100%);
+    }
+    100% {
+      transform: scale(1);
+      border-radius: 0;
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+</style>
+
+<img src="<?= htmlspecialchars($about['image']) ?>"
+     alt="About Us"
+     style="
+       display: block;
+       width: 100%;
+       max-width: 500px;
+       height: auto;
+       border-radius: 12px;
+       box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+       animation: liquidZoomBurst 7s cubic-bezier(0.4, 0, 0.2, 1.5) infinite;
+       transform-origin: center center;
+       overflow: hidden;
+       will-change: transform, clip-path;
+       filter: none;
+     ">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
               <?php endif; ?>
             </div>
             <div class="col-lg-6 order-2 order-lg-1 content">
@@ -175,8 +242,6 @@ foreach ($serviceItems as $item) {
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
-
 <!-- WhatsApp Floating Button -->
 <a href="https://wa.me/254748900043"
    class="whatsapp-float animate-bounce"
@@ -192,8 +257,14 @@ foreach ($serviceItems as $item) {
   <i class="bi bi-telephone-fill"></i>
 </a>
 
+<!-- Email Floating Button -->
+<a href="mailto:info@birmannict.com"
+   class="email-float animate-pulse"
+   title="Email Us">
+  <i class="bi bi-envelope-fill"></i>
+</a>
 
-
+  
 </body>
 
 </html>

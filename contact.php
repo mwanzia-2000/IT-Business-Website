@@ -180,6 +180,12 @@ $query = new Database();
   <i class="bi bi-telephone-fill"></i>
 </a>
 
+<!-- Email Floating Button -->
+<a href="mailto:info@birmannict.com"
+   class="email-float animate-pulse"
+   title="Email Us">
+  <i class="bi bi-envelope-fill"></i>
+</a>
 
 
 
